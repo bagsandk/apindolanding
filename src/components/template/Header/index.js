@@ -15,8 +15,9 @@ const navigation = [
     { name: 'Beranda', href: '/' },
     { name: 'Berita', href: 'berita' },
     { name: 'Mitra', href: 'mitra' },
-    { name: 'Tentang Kami', href: '#' },
+    { name: 'Tentang Kami', href: 'menu' },
     { name: 'Kontak', href: 'kontak' },
+    { name: 'Peluang Investasi', href: '#' },
 ]
 
 function Header() {
@@ -69,7 +70,7 @@ function Header() {
                                     </div>
                                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-16">
                                         {navigation.map((item) =>
-                                            item.href == '#' ?
+                                            item.href == 'menu' ?
                                                 (
                                                     <a key={item.name} onClick={handleClick} className="font-medium text-black hover:text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-400">
                                                         {item.name}
@@ -129,7 +130,7 @@ function Header() {
                                         </div>
                                         <div className="px-2 pt-2 pb-3 space-y-1">
                                             {navigation.map((item) =>
-                                                item.href == '#' ?
+                                                item.href == 'menu' ?
                                                     (
                                                         <a key={item.name} onClick={handleClick} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700hover:text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-blue-400">
                                                             {item.name}
